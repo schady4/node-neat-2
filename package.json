@@ -1,0 +1,30 @@
+{
+  "name": "node-neat-2",
+  "version": "1.0.0",
+  "description": "node-sass wrapper for thoughtbot's bourbon neat library",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --recursive --growl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/schady4/node-neat-2.git"
+  },
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "author": "Jarett Schadlich <jarett@rinckadvertising.com> (http://www.rinckadvertising.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schady4/node-neat-2/issues"
+  },
+  "dependencies": {
+    "bourbon-neat": "^2.1.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0",
+    "node-sass": "^3.0.0"
+  }
+}
