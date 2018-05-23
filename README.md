@@ -193,7 +193,7 @@ make test
 
 Michael LaCroix's original port of this project is here [node-neat](https://github.com/lacroixdesign/node-neat)
 
-This port of node-bourbon is maintained by Jarett Schadlich, credit goes to Michael LaCroix, however all credits for the Bourbon library go to [thoughtbot, inc](http://thoughtbot.com/community):
+This port of node-neat is maintained by Jarett Schadlich, credit goes to Michael LaCroix, however all credits for the Bourbon library go to [thoughtbot, inc](http://thoughtbot.com/community):
 
 > ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 >
