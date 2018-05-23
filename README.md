@@ -1,5 +1,7 @@
 [![Neat](http://images.thoughtbot.com/bourbon/neat-logo.svg)](http://neat.bourbon.io)
 
+*This is a port of https://github.com/lacroixdesign/node-neat updating to version 2.1.0 use at your own risk. I am not avail for help. I just needed an updated version.
+
 *This is a node-sass port of the [Neat](http://neat.bourbon.io) library. If you
 are looking for the original Ruby/Rails version, you can find it
 [here](https://github.com/thoughtbot/neat).*
@@ -29,7 +31,7 @@ are looking for the original Ruby/Rails version, you can find it
 To install as a development dependency, run:
 
 ```bash
-npm install --save-dev node-neat
+npm install --save-dev node-neat-2
 ```
 
 If you need it in production, replace `--save-dev` with `--save`.
@@ -38,7 +40,7 @@ If you need it in production, replace `--save-dev` with `--save`.
 
 ## Basic Usage
 
-To use `node-neat` with tools like [gulp.js](#gulpjs-usage), [Grunt](#grunt-usage), or directly with [node-sass](#node-sass-usage), provide the path to Neat in your Sass config. There are a couple of convenience methods for this, depending on whether you want Sass to include additional directories or not.
+To use `node-neat-2` with tools like [gulp.js](#gulpjs-usage), [Grunt](#grunt-usage), or directly with [node-sass](#node-sass-usage), provide the path to Neat in your Sass config. There are a couple of convenience methods for this, depending on whether you want Sass to include additional directories or not.
 
 ### with() Function
 
@@ -47,7 +49,7 @@ The `with()` function will include any additional paths you pass as arguments.
 Returns an array of paths.
 
 ```javascript
-var neat = require('node-neat');
+var neat = require('node-neat-2');
 // Any of these will return an array of Neat & Bourbon's paths plus your custom path(s)
 neat.with('path/to/stylesheets')
 neat.with('path/to/stylesheets1', 'path/to/stylesheets2')
@@ -59,7 +61,7 @@ neat.with(['path/to/stylesheets1', 'path/to/stylesheets2'])
 The `includePaths` property returns an array of Neat & Bourbon's paths to use in your config.
 
 ```javascript
-var neat = require('node-neat');
+var neat = require('node-neat-2');
 neat.includePaths // Array of Neat paths
 ```
 
@@ -82,9 +84,9 @@ var sass = require('gulp-sass');
 gulp.task('sass', function () {
   gulp.src('path/to/input.scss')
     .pipe(sass({
-      // includePaths: require('node-neat').with('other/path', 'another/path')
+      // includePaths: require('node-neat-2').with('other/path', 'another/path')
       // - or -
-      includePaths: require('node-neat').includePaths
+      includePaths: require('node-neat-2').includePaths
     }))
     .pipe(gulp.dest('path/to/output.css'));
 });
@@ -97,7 +99,7 @@ gulp.task('sass', function () {
 The [grunt-sass](https://github.com/sindresorhus/grunt-sass) task uses
 [node-sass](https://github.com/andrew/node-sass)
 ([LibSass](https://github.com/hcatlin/libsass)) underneath, and is the recommended
-way to use Grunt with node-neat.
+way to use Grunt with node-neat-2.
 
 Example config:
 
@@ -106,9 +108,9 @@ grunt.initConfig({
   sass: {
     dist: {
       options: {
-        // includePaths: require('node-neat').with('other/path', 'another/path')
+        // includePaths: require('node-neat-2').with('other/path', 'another/path')
         // - or -
-        includePaths: require('node-neat').includePaths
+        includePaths: require('node-neat-2').includePaths
       },
       files: {
         'path/to/output.css': 'path/to/input.scss'
@@ -120,10 +122,10 @@ grunt.initConfig({
 
 ### Using *grunt-contrib-sass*
 
-If you are using the Ruby version of Sass with node-neat, then you will need to use
+If you are using the Ruby version of Sass with node-neat-2, then you will need to use
 the [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) task instead.
 
-*Note that node-neat is __NOT__ tested against the __Ruby__ version – only against __LibSass__.*
+*Note that node-neat-2 is __NOT__ tested against the __Ruby__ version – only against __LibSass__.*
 
 Example config:
 
@@ -132,9 +134,9 @@ grunt.initConfig({
   sass: {
     dist: {
       options: {
-        // loadPath: require('node-neat').with('other/path', 'another/path')
+        // loadPath: require('node-neat-2').with('other/path', 'another/path')
         // - or -
-        loadPath: require('node-neat').includePaths
+        loadPath: require('node-neat-2').includePaths
       },
       files: {
         'path/to/output.css': 'path/to/input.scss'
@@ -150,7 +152,7 @@ Using it directly with [node-sass](https://github.com/andrew/node-sass).
 
 ```javascript
 var sass    = require('node-sass')
-var neat = require('node-neat');
+var neat = require('node-neat-2');
 
 sass.render({
   file: './application.scss',
@@ -169,11 +171,14 @@ sass.render({
 
 # Getting Help
 
+Again this is not the original project so use at your own risk.
+
+Below is the original project and maintainer. 
 Feel free to tweet me with questions [@iamlacroix](https://twitter.com/iamlacroix), or [open a ticket](https://github.com/lacroixdesign/node-neat/issues) on GitHub.
 
 # Testing
 
-`node-neat` is tested against the examples provided in the 
+`node-neat-2` is tested against the examples provided in the 
 [Neat documentation](http://neat.bourbon.io/docs). The tests check for compile 
 errors, so if a feature compiles but the expected output is incorrect, be sure 
 to [open a ticket](https://github.com/lacroixdesign/node-neat/issues).
@@ -186,13 +191,15 @@ make test
 
 # Credits
 
-This node-sass port is maintained by Michael LaCroix, however all credits for
-the Bourbon Neat library go to [thoughtbot, inc](http://thoughtbot.com/community):
+Michael LaCroix's original port of this project is here [node-neat](https://github.com/lacroixdesign/node-neat)
+
+This port of node-bourbon is maintained by Jarett Schadlich, credit goes to Michael LaCroix, however all credits for the Bourbon library go to [thoughtbot, inc](http://thoughtbot.com/community):
 
 > ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 >
 > Neat is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community). Tweet your questions or suggestions at [@kaishin](https://twitter.com/kaishin) and [@kylefiedler](https://twitter.com/kylefiedler).
 
 # License
+node-neat-2 is Copyright © 2018 Jarett Schadlich. It is free software, and may be redistributed under the terms specified in the LICENSE file.
 
 node-neat is Copyright © 2013-2014 Michael LaCroix. It is free software, and may be redistributed under the terms specified in the LICENSE file.
