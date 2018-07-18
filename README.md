@@ -1,6 +1,6 @@
 [![Neat](http://images.thoughtbot.com/bourbon/neat-logo.svg)](http://neat.bourbon.io)
 
-*This is a port of https://github.com/lacroixdesign/node-neat updating to version 2.1.0 use at your own risk. I am not avail for help. I just needed an updated version.
+*This is a port of https://github.com/lacroixdesign/node-neat updating to version 3.0.0 use at your own risk. I am not avail for help. I just needed an updated version.
 
 *This is a node-sass port of the [Neat](http://neat.bourbon.io) library. If you
 are looking for the original Ruby/Rails version, you can find it
@@ -173,14 +173,14 @@ sass.render({
 
 Again this is not the original project so use at your own risk.
 
-Below is the original project and maintainer. 
+Below is the original project and maintainer.
 Feel free to tweet me with questions [@iamlacroix](https://twitter.com/iamlacroix), or [open a ticket](https://github.com/lacroixdesign/node-neat/issues) on GitHub.
 
 # Testing
 
-`node-neat-2` is tested against the examples provided in the 
-[Neat documentation](http://neat.bourbon.io/docs). The tests check for compile 
-errors, so if a feature compiles but the expected output is incorrect, be sure 
+`node-neat-2` is tested against the examples provided in the
+[Neat documentation](http://neat.bourbon.io/docs). The tests check for compile
+errors, so if a feature compiles but the expected output is incorrect, be sure
 to [open a ticket](https://github.com/lacroixdesign/node-neat/issues).
 
 Run the tests with:
