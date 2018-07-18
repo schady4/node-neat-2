@@ -1,6 +1,6 @@
 {
   "name": "node-neat-2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node-sass wrapper for thoughtbot's bourbon neat library",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "url": "https://github.com/schady4/node-neat-2/issues"
   },
   "dependencies": {
-    "bourbon-neat": "^2.1.0"
+    "bourbon-neat": "^3.0.0"
   },
   "devDependencies": {
     "chai": "^1.10.0",
