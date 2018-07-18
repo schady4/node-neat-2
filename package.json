@@ -1,6 +1,6 @@
 {
   "name": "node-neat-2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node-sass wrapper for thoughtbot's bourbon neat library",
   "main": "index.js",
   "scripts": {
