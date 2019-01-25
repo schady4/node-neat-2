@@ -1,6 +1,6 @@
 [![Neat](http://images.thoughtbot.com/bourbon/neat-logo.svg)](http://neat.bourbon.io)
 
-*This is a port of https://github.com/lacroixdesign/node-neat updating to version 3.0.0 use at your own risk. I am not avail for help. I just needed an updated version.
+*This is a port of https://github.com/lacroixdesign/node-neat updating to version 3.0.1 use at your own risk. I am not avail for help. I just needed an updated version.
 
 *This is a node-sass port of the [Neat](http://neat.bourbon.io) library. If you
 are looking for the original Ruby/Rails version, you can find it
